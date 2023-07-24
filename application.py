@@ -163,4 +163,4 @@ def range():
         formatted_average_result = "{:.2f}".format(average_result)
         return jsonify({'htmlresponse': render_template('odo.html',average_result=average_result, c1result=formatted_num,data=df_json,data1=df1_json,count_result=id_count,cycle_count=cycle_count,cycle_count1=cycle_count1,pivot_table_json=pivot_table_json,id_count=id_count,json_data=json_data)})
 if __name__ == '__main__':
- application.run(debug=True, port="3216")
+ application.run(debug=True, port="8080", host="0.0.0.0")
